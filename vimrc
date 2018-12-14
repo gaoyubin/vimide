@@ -53,6 +53,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'alvan/vim-closetag'
 Plugin 'Valloric/MatchTagAlways'
+Plugin 'rkulla/pydiction.git'
 call vundle#end()
 map <f2> :NERDTreeToggle<cr>
 
@@ -174,3 +175,8 @@ let g:mta_filetypes = {
     \ 'xml' : 1,
     \ 'jinja' : 1,
     \}
+
+"Pydiction
+filetype plugin on
+let g:pydiction_location ='~/.vim/bundle/pydiction/complete-dict'
+let g:pydiction_menu_height = 3
